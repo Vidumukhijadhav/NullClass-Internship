@@ -36,7 +36,7 @@ For Ubuntu:
   Connect EC2 to RDS
 
       mysql -h <RDS-ENDPOINT> -u <USERNAME> -p
-      Enter the password → You’re connected to the MYSQL server
+ Enter the password → You’re connected to the MYSQL server
 
   MySQL CLI Commands
   
@@ -44,37 +44,37 @@ For Ubuntu:
       CREATE DATABASE NullClass;
       USE NullClass;
 
-CREATE TABLE employees (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    department VARCHAR(100),
-    salary INT
-);
-
-INSERT INTO employees (name, department, salary) 
-VALUES ('Vidumukhi', 'DevOps', 80000);
-
-SELECT * FROM employees;
-
-CREATE TABLE Interns (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
+      CREATE TABLE employees (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          name VARCHAR(100),
+          department VARCHAR(100),
+          salary INT
+      );
+      
+      INSERT INTO employees (name, department, salary) 
+      VALUES ('Vidumukhi', 'DevOps', 80000);
+      
+      SELECT * FROM employees;
+      
+      CREATE TABLE Interns (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          name VARCHAR(100),
     department VARCHAR(100),
     stipend INT
-);
+      );
 
-INSERT INTO Interns (name, department, stipend) 
-VALUES ('Shivani', 'Cloud_Intern', 8000);
-
-SELECT * FROM Interns;
-
-SHOW TABLES;
-
-DESCRIBE employees;
-
-DESCRIBE Interns;
-
-EXIT;
+      INSERT INTO Interns (name, department, stipend) 
+      VALUES ('Shivani', 'Cloud_Intern', 8000);
+      
+      SELECT * FROM Interns;
+      
+      SHOW TABLES;
+      
+      DESCRIBE employees;
+      
+      DESCRIBE Interns;
+      
+      EXIT;
 
 
 
