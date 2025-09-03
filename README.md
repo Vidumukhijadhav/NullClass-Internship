@@ -30,17 +30,19 @@ TASK1 - Create an RDS MySQL Database and Connect from EC2 Launch an RDS MySQL in
  Install MySQL Client on EC2
 For Ubuntu:
 
-    1.sudo apt update
-    2.sudo apt install mysql-client -y
+    sudo apt update
+    sudo apt install mysql-client -y
 
   Connect EC2 to RDS
-1.mysql -h <RDS-ENDPOINT> -u <USERNAME> -p
-2.Enter the password → You’re connected to the MYSQL server
+
+      mysql -h <RDS-ENDPOINT> -u <USERNAME> -p
+      Enter the password → You’re connected to the MYSQL server
 
   MySQL CLI Commands
-SHOW DATABASES;
-CREATE DATABASE NullClass;
-USE NullClass;
+  
+      SHOW DATABASES;
+      CREATE DATABASE NullClass;
+      USE NullClass;
 
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
