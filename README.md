@@ -17,7 +17,7 @@ This guide explains how to launch an RDS MySQL instance inside a VPC, allow EC2 
     Source: IPV4 Anywhere or your IP for testing.
    
 
-   Launch RDS MySQL Instance
+ Launch RDS MySQL Instance
 1. Go to AWS Console → RDS → Create Database.
 2. Select:
     Engine: MySQL
@@ -28,17 +28,16 @@ This guide explains how to launch an RDS MySQL instance inside a VPC, allow EC2 
 7.Ensure it is inside your VPC same as that of EC2-instance.
 
 
-   Install MySQL Client on EC2
+ Install MySQL Client on EC2
 For Ubuntu:
     1.sudo apt update
     2.sudo apt install mysql-client -y
 
-    Connect EC2 to RDS
+  Connect EC2 to RDS
 1.mysql -h <RDS-ENDPOINT> -u <USERNAME> -p
 2.Enter the password → You’re connected to the MYSQL server
 
-
-    MySQL CLI Commands
+  MySQL CLI Commands
 SHOW DATABASES;
 CREATE DATABASE NullClass;
 USE NullClass;
@@ -74,6 +73,15 @@ DESCRIBE employees;
 DESCRIBE Interns;
 
 EXIT;
+
+
+
+✅ Summary
+Launched EC2 instance 
+Configured Security Groups
+Created RDS MySQL instance inside VPC as same that of EC2
+Installed MySQL CLI on EC2 Server
+Connected EC2 → RDS and performed DB operations
 
 
 
