@@ -3,7 +3,6 @@ TASK1 - Create an RDS MySQL Database and Connect from EC2 Launch an RDS MySQL in
 
 🚀 Create an RDS MySQL Database and Connect from EC2
 
-This guide explains how to launch an RDS MySQL instance inside a VPC, allow EC2 to connect, and use MySQL CLI to manage the database.
 
    Launch EC2 Instance
 
@@ -30,6 +29,7 @@ This guide explains how to launch an RDS MySQL instance inside a VPC, allow EC2 
 
  Install MySQL Client on EC2
 For Ubuntu:
+
     1.sudo apt update
     2.sudo apt install mysql-client -y
 
